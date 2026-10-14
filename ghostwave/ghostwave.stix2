@@ -1,0 +1,2002 @@
+{
+  "type": "bundle",
+  "id": "bundle--3acb63ff-e940-473e-ba78-4f4f5fe31b4e",
+  "spec_version": "2.1",
+  "objects": [
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--440898f0-fcd2-4864-8781-482c42d00f69",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave domain gotoiphone.com",
+      "description": "Registrable domain. MVT matches this as URL.top_level, so js. and cdn. hosts hit even when the port is present.",
+      "pattern": "[domain-name:value = 'gotoiphone.com']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--8af7018b-65b2-4622-97f7-060f50145ebe",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave domain js.gotoiphone.com",
+      "description": "Delivery and exfil host. Exact domain match when the stored URL has no port.",
+      "pattern": "[domain-name:value = 'js.gotoiphone.com']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d173ed46-73bd-476c-abb6-d998e072895c",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave domain cdn.gotoiphone.com",
+      "description": "C2 host for /beacon and /result.",
+      "pattern": "[domain-name:value = 'cdn.gotoiphone.com']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--67574553-7df3-4674-bc12-92cacd9bdaa1",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave domain mcp9.net",
+      "description": "Callback host. Domain match covers /exploit_result including query strings, which cannot be put in a url:value pattern.",
+      "pattern": "[domain-name:value = 'mcp9.net']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--382d1457-b7c1-4e03-92fd-03a2e905f28e",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave URL https://js.gotoiphone.com/ios18/beacon",
+      "description": "Exact url:value match only. Variants with a query string are caught by the domain indicator, not by this pattern.",
+      "pattern": "[url:value = 'https://js.gotoiphone.com/ios18/beacon']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--73b4a477-3c61-4d39-b587-4117ca8ecb42",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave URL https://js.gotoiphone.com/ios18/result",
+      "description": "Exact url:value match only. Variants with a query string are caught by the domain indicator, not by this pattern.",
+      "pattern": "[url:value = 'https://js.gotoiphone.com/ios18/result']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--0205940d-2fbd-473b-b8d7-a3d37ceb0e1f",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave URL https://js.gotoiphone.com:80",
+      "description": "Exact url:value match only. Variants with a query string are caught by the domain indicator, not by this pattern.",
+      "pattern": "[url:value = 'https://js.gotoiphone.com:80']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--f02829d1-afac-4e6d-8b4d-9f559234ad24",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave URL https://js.gotoiphone.com:8018",
+      "description": "Exact url:value match only. Variants with a query string are caught by the domain indicator, not by this pattern.",
+      "pattern": "[url:value = 'https://js.gotoiphone.com:8018']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d4c7e0b7-e71a-4587-86c2-d63f5a994d77",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave URL http://js.gotoiphone.com:8018",
+      "description": "Exact url:value match only. Variants with a query string are caught by the domain indicator, not by this pattern.",
+      "pattern": "[url:value = 'http://js.gotoiphone.com:8018']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--a4595bea-69d1-4a0c-bbf1-dd4fa660a478",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave URL https://cdn.gotoiphone.com/beacon",
+      "description": "Exact url:value match only. Variants with a query string are caught by the domain indicator, not by this pattern.",
+      "pattern": "[url:value = 'https://cdn.gotoiphone.com/beacon']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--428fdf0d-4e60-4dd1-a530-e415a2245e7a",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave URL https://cdn.gotoiphone.com/result",
+      "description": "Exact url:value match only. Variants with a query string are caught by the domain indicator, not by this pattern.",
+      "pattern": "[url:value = 'https://cdn.gotoiphone.com/result']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d6028e93-a47d-4686-95fa-b788d628b696",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave URL https://cdn.gotoiphone.com:443/beacon",
+      "description": "Exact url:value match only. Variants with a query string are caught by the domain indicator, not by this pattern.",
+      "pattern": "[url:value = 'https://cdn.gotoiphone.com:443/beacon']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--761a3067-49c7-4bed-889a-b226e8e85181",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave URL https://cdn.gotoiphone.com:443/result",
+      "description": "Exact url:value match only. Variants with a query string are caught by the domain indicator, not by this pattern.",
+      "pattern": "[url:value = 'https://cdn.gotoiphone.com:443/result']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--36b9858c-6bfe-4ed6-9658-8cddc3f55d78",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave URL https://mcp9.net/exploit_result",
+      "description": "Exact url:value match only. Variants with a query string are caught by the domain indicator, not by this pattern.",
+      "pattern": "[url:value = 'https://mcp9.net/exploit_result']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--5c3d6c52-3cbc-4a4a-ab13-71a54af24ac7",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave URL http://mcp9.net/exploit_result",
+      "description": "Exact url:value match only. Variants with a query string are caught by the domain indicator, not by this pattern.",
+      "pattern": "[url:value = 'http://mcp9.net/exploit_result']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--4688a003-20ab-4f6a-8400-5f9be5d21219",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name PostLogs.txt",
+      "description": "Logger file under Media. Often still present after reboot.",
+      "pattern": "[file:name = 'PostLogs.txt']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--568837c9-5658-4863-a715-6bfa1a98d331",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name RemoteLog.log",
+      "description": "Loader log under Media. Often already unlinked; absence is not a negative.",
+      "pattern": "[file:name = 'RemoteLog.log']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--aad0c63e-828e-4850-8109-f686af458dc5",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name .c2_pe_device_id",
+      "description": "Durable device id written under Media.",
+      "pattern": "[file:name = '.c2_pe_device_id']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--e48108e2-adff-4be0-b808-bed5b709b42a",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name wa_identity.json",
+      "description": "Implant-written identity file, normally /tmp/wa_identity.json.",
+      "pattern": "[file:name = 'wa_identity.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--42f3cf88-73da-4b27-bc40-6f88a52e03f1",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name p7.cache.json",
+      "description": "Implant cache under c2_ipc.",
+      "pattern": "[file:name = 'p7.cache.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--1b56b332-7dee-4358-b022-a1193a3d1f0e",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name p7_classkeys.json",
+      "description": "Implant-written file under /tmp.",
+      "pattern": "[file:name = 'p7_classkeys.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--8ae604f6-0dc0-4a0d-ab6f-9460d2e080a2",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name p7_blob3.json",
+      "description": "Implant-written file under /tmp.",
+      "pattern": "[file:name = 'p7_blob3.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--9cdbebbc-080b-4679-ace7-8350b450da69",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name keychain_c2_dump.json",
+      "description": "Implant-written dump under /tmp. Not the system keychain.",
+      "pattern": "[file:name = 'keychain_c2_dump.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--56f30132-ffed-42ad-8da6-77c8d10097b5",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name keychain_c2_dump.done",
+      "description": "Done marker next to keychain_c2_dump.json.",
+      "pattern": "[file:name = 'keychain_c2_dump.done']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d9ca2782-7d64-4abe-9484-8e05e2d20915",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name pe_pelog.json",
+      "description": "Implant flag file under c2_ipc or c2_v1.",
+      "pattern": "[file:name = 'pe_pelog.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--720c3e14-7079-454b-b286-49e899aebee0",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name channel_crypto_min.js",
+      "description": "Implant-written script under c2_ipc or c2_v1.",
+      "pattern": "[file:name = 'channel_crypto_min.js']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--42e2ba96-dc9b-4356-94eb-b3454fb542f6",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name pe_inj_code.js",
+      "description": "Implant-written script under c2_ipc.",
+      "pattern": "[file:name = 'pe_inj_code.js']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--82a82592-17fb-4225-96bd-1c37ae95cd14",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name photos_upload_v1.done",
+      "description": "Implant done marker under c2_ipc.",
+      "pattern": "[file:name = 'photos_upload_v1.done']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--582d73e9-c5ee-4a18-ae09-689c95fbf985",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name tg_v1.done",
+      "description": "Implant done marker under c2_ipc.",
+      "pattern": "[file:name = 'tg_v1.done']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--4fcd0677-c272-4eda-9112-2bf3dab60adc",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name tg_auth.ready",
+      "description": "Implant marker under /tmp or c2_ipc.",
+      "pattern": "[file:name = 'tg_auth.ready']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--0046c66b-293b-403f-b823-ceecea751671",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name tg_auth.uploaded",
+      "description": "Implant marker under /tmp or c2_ipc.",
+      "pattern": "[file:name = 'tg_auth.uploaded']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c8bef09d-1ad8-42a6-abee-9020b201ef76",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name p7_debug.log",
+      "description": "Implant log under /tmp.",
+      "pattern": "[file:name = 'p7_debug.log']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--3f95fc67-2ea8-4e12-b048-0cac031ecd80",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name secq_last.txt",
+      "description": "Implant timestamp file under /tmp.",
+      "pattern": "[file:name = 'secq_last.txt']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--df538915-d27b-47f4-88f3-155ac5b165c0",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name secq_last.json",
+      "description": "Implant timestamp file under c2_ipc.",
+      "pattern": "[file:name = 'secq_last.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--61fb3af9-a03a-43f3-a7e4-eec69396ac87",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name imtoken_keychain.json",
+      "description": "Implant-written slice under /tmp.",
+      "pattern": "[file:name = 'imtoken_keychain.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--eae30d69-3dcc-4f6f-84b4-f869c2c7161b",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name bitpie_keychain.json",
+      "description": "Implant-written slice under /tmp.",
+      "pattern": "[file:name = 'bitpie_keychain.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--1dc65808-dbb2-424f-bc9a-482580e48528",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name c2_endpoints.json",
+      "description": "Implant endpoint cache under c2_ipc or c2_v1.",
+      "pattern": "[file:name = 'c2_endpoints.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--dc5e67dc-99e2-4603-8115-295c67f9506c",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name c2_wallet_debug.log",
+      "description": "Implant log opened at /tmp/c2_wallet_debug.log.",
+      "pattern": "[file:name = 'c2_wallet_debug.log']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--29c88a12-f6d7-4ad5-a599-58cce50ec5c5",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name pe.fcall_expect",
+      "description": "Implant handshake file under c2_ipc.",
+      "pattern": "[file:name = 'pe.fcall_expect']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--0e99d100-d2a7-4c4d-948e-2a5a1df6d012",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name pe.fcall_ready",
+      "description": "Implant handshake file under c2_ipc.",
+      "pattern": "[file:name = 'pe.fcall_ready']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--9c95ba66-1425-402b-933a-b1466ae5cf83",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name pl.core.lock",
+      "description": "Implant lock at /var/tmp/pl.core.lock.",
+      "pattern": "[file:name = 'pl.core.lock']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d16951f9-fbe9-45ad-9e8f-8f0b917cbd53",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name pe.p7.progress",
+      "description": "Implant progress file under c2_ipc.",
+      "pattern": "[file:name = 'pe.p7.progress']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--ddbece17-bdd1-498e-9084-1d25075e49bb",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name pe.inj.progress",
+      "description": "Implant progress file under c2_ipc.",
+      "pattern": "[file:name = 'pe.inj.progress']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--3db9337e-2479-4474-b0b7-65d3bb4569dc",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name wa_appgroup.hint",
+      "description": "Implant hint file under c2_ipc.",
+      "pattern": "[file:name = 'wa_appgroup.hint']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--cac50990-1168-48d0-baed-fe35e9bd88ed",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name 34ef644ff217a50beadde64dc8e23a7dx.js",
+      "description": "Lure script name from routers.js. Basename match in a WebKit cache dump.",
+      "pattern": "[file:name = '34ef644ff217a50beadde64dc8e23a7dx.js']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--559a7bbf-a604-4735-a795-0eb804fe13fd",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name rce_loader.js",
+      "description": "Lure script basename. Not a url:value; check_url does not substring-match.",
+      "pattern": "[file:name = 'rce_loader.js']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--3ae1b103-cd6b-49f9-a722-5cb6390324fc",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name chain_loader_26.js",
+      "description": "Lure script basename.",
+      "pattern": "[file:name = 'chain_loader_26.js']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--6cd3a2dc-f2df-4e07-838f-1016e9854b5b",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name agent.hb",
+      "description": "Implant heartbeat file under c2_ipc.",
+      "pattern": "[file:name = 'agent.hb']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--7eb90a30-b727-412a-b0f0-ffb69d9cb29d",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name agent.entered",
+      "description": "Implant marker under c2_ipc.",
+      "pattern": "[file:name = 'agent.entered']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--ececfab0-dc19-4394-8db2-20a6e43592da",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name bs.heartbeat",
+      "description": "Implant heartbeat under c2_ipc.",
+      "pattern": "[file:name = 'bs.heartbeat']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--acb76037-22a8-4e39-86c6-5c99082dc0c5",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name pe.heartbeat",
+      "description": "Implant heartbeat under c2_ipc.",
+      "pattern": "[file:name = 'pe.heartbeat']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c948bad3-7f66-42d5-a330-e26b02d90cae",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name pe.report_ok",
+      "description": "Implant marker under c2_ipc.",
+      "pattern": "[file:name = 'pe.report_ok']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--07e2c215-294e-417e-8508-4c0cd61b2540",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave file name pe.inventory",
+      "description": "Implant inventory file under c2_ipc.",
+      "pattern": "[file:name = 'pe.inventory']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--ffa36b96-5cba-4f1b-aaef-bbc87f4a71c8",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/c2_ipc",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/c2_ipc']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--59111c22-590a-4097-905d-7dda0349dbde",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/c2_ipc",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/c2_ipc']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d3e9e6fb-4506-422d-aee1-f6b8d013cae2",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/c2_ipc",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/c2_ipc']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--691917c0-3212-4ecd-8bfe-c909bee7e16c",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/c2_ipc",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/c2_ipc']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--9c85b535-36f7-4242-afe4-23d59ec9408f",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/c2_v1",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/c2_v1']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--6ee0a9e9-44ec-42d9-9405-a73a01c24307",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/c2_v1",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/c2_v1']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--5562170e-47cb-4067-a969-a7f61352413b",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/c2_v1",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/c2_v1']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--09a0d3b0-08ad-4866-9e92-52d8dba888bc",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/c2_v1",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/c2_v1']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--267462fd-46d9-4a6f-a99c-42a5fd419a7d",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/wa_auth",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/wa_auth']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--a02c964d-81f5-49a5-8ecf-a7bfe3cd07ca",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/wa_auth",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/wa_auth']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--71941886-dcc8-4ab8-a7b6-616d7b3c37e5",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/wa_auth",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/wa_auth']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--2a9236b7-0026-47f4-b087-b3f4b0cbebde",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/wa_auth",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/wa_auth']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--b8a64944-1b68-420e-8440-6e9ddfd13d54",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/tg_auth",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/tg_auth']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--afc85237-6e4d-44a9-9f29-b10d04393067",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/tg_auth",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/tg_auth']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--3e13b97e-70a6-408b-8b68-5971701bff5c",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/tg_auth",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/tg_auth']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--00ce2160-c418-4313-8a95-5322e5cd18a0",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/tg_auth",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/tg_auth']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--2d50c287-dc4b-4049-9ae4-2f7abb0bc045",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/wa_identity.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/wa_identity.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--242abd63-e10b-48c1-8b59-c65d1bdaef88",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/wa_identity.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/wa_identity.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--87af24f6-5e60-4269-a3de-6e2e5d0b36e4",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/wa_identity.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/wa_identity.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--299b5775-1dbe-4f21-a7ce-a32781a0f0ba",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/wa_identity.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/wa_identity.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--2fde94b5-3858-465c-bb5b-e773118baeeb",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/keychain-2.db",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/keychain-2.db']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--5155d859-4394-48e5-a96b-6a43c98e0dd5",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/keychain-2.db",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/keychain-2.db']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--dd2c1345-58e8-4da1-8a16-833de0b64f8c",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/keychain-2.db",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/keychain-2.db']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--1cd5b492-df39-4342-b783-4ce76043bccd",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/keychain-2.db",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/keychain-2.db']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--8b6fd860-19e5-4571-a954-e08e7e113849",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/keychain_c2_dump.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/keychain_c2_dump.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--59441e7a-6581-4b6f-89bb-ef09f7097dd8",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/keychain_c2_dump.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/keychain_c2_dump.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--7482ca90-4bb5-45e1-9646-4273ab1c500d",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/keychain_c2_dump.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/keychain_c2_dump.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--5bc93521-2f9c-4d0e-a0ea-e80bc986b815",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/keychain_c2_dump.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/keychain_c2_dump.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--8f26232e-ecd9-46a9-9add-8e2683796485",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/p7_classkeys.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/p7_classkeys.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--12459a57-717d-4c2c-ace0-810d4d43354f",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/p7_classkeys.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/p7_classkeys.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--77a53a54-478d-42fb-ae68-5bc5a5b79e69",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/p7_classkeys.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/p7_classkeys.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--a2e2fdc0-a8ac-4f59-9b18-4bb6cecbb9e5",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/p7_classkeys.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/p7_classkeys.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--420e13c6-30da-4939-87bc-081d305ab289",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/p7_blob3.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/p7_blob3.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--9d069506-a763-482a-845e-73132f908841",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/p7_blob3.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/p7_blob3.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--7c08a687-97d7-4201-a33d-8d01ad8e5f68",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/p7_blob3.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/p7_blob3.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--7ef54d61-8848-457f-b610-d434393f9368",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/p7_blob3.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/p7_blob3.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c2edd6df-4ebb-4d58-ac2d-3ae7de3c9b7a",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/p7_debug.log",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/p7_debug.log']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--253d8615-9305-4046-b6e1-e78f042ddff5",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/p7_debug.log",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/p7_debug.log']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--446fd50a-2314-49bf-82d5-16704f6d1e0e",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/p7_debug.log",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/p7_debug.log']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--bcf30ca3-b93e-4551-b404-e792e4cfdcc3",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/p7_debug.log",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/p7_debug.log']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--30e37395-c6fa-4d56-b54d-6e9a4be4a565",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/secq_last.txt",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/secq_last.txt']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--01e10f04-c49b-41b5-b47c-f11e96482c01",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/secq_last.txt",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/secq_last.txt']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d99d97d3-6838-4232-ab54-6a695c17d310",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/secq_last.txt",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/secq_last.txt']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--15c46e71-f6a1-4987-9c17-ee1ad9069ce4",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/secq_last.txt",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/secq_last.txt']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--56f2454c-e16d-4a85-9f9d-4212395f6bde",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/pl.core.lock",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/pl.core.lock']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--0697f302-b52b-4b75-adf7-0d15b37931e5",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/pl.core.lock",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/pl.core.lock']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--abe3583e-fcc4-494c-b76e-dd06431dd562",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/pl.core.lock",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/pl.core.lock']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--47621f71-9cba-4232-8c72-3622ae261a4f",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/pl.core.lock",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/pl.core.lock']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--6f934cc1-c0b8-4f1f-be1a-50e428e0ae37",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/c2_wallet_debug.log",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/c2_wallet_debug.log']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--1759f24c-dd8f-4537-9701-381d39460817",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/c2_wallet_debug.log",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/c2_wallet_debug.log']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--5db9aa1b-fe25-4183-8ac6-4c046d1898be",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/c2_wallet_debug.log",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/c2_wallet_debug.log']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--3019bc5d-5517-4c92-a545-e121b5ff0fda",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/c2_wallet_debug.log",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/c2_wallet_debug.log']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--a575735d-82ca-4b07-9964-2df78b193cf7",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/imtoken_keychain.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/imtoken_keychain.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--968473a1-4a9c-419d-9e01-59121fd5797e",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/imtoken_keychain.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/imtoken_keychain.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c40353ea-e377-4802-ae57-e3ee4fb9dbd0",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/imtoken_keychain.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/imtoken_keychain.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--38037f91-f72b-4037-9b7f-1c62cf4a2c2f",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/imtoken_keychain.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/imtoken_keychain.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c4c2b41b-0995-40b4-9b63-d4e443bca5c2",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/bitpie_keychain.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/bitpie_keychain.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--3da02ddb-dcdc-4cc9-9e8e-544af3cf6b59",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/bitpie_keychain.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/bitpie_keychain.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--520cffe5-1c0f-43a3-a942-133b81d35fcb",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/bitpie_keychain.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/bitpie_keychain.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--7d1938e2-31ea-4e1f-8a0d-1f331bd34b60",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/bitpie_keychain.json",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/bitpie_keychain.json']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--f7dd3b7c-6453-454d-b966-151b05ccf0f8",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/tg_auth.ready",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/tg_auth.ready']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--4def1731-c12a-4326-be44-d02cec118d9e",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/tg_auth.ready",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/tg_auth.ready']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--f6be1c10-b864-4e43-8e03-0373e48d4634",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/tg_auth.ready",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/tg_auth.ready']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--df2f0c4a-804a-4b1d-bfa0-214f02832869",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/tg_auth.ready",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/tg_auth.ready']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--f391c34f-0d7e-43bb-9bc1-809c6c4aae56",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/tmp/wa_auth/cck.dat",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/tmp/wa_auth/cck.dat']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--eff2fca0-b0c6-451e-acd3-df48e3f5cc52",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/tmp/wa_auth/cck.dat",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/tmp/wa_auth/cck.dat']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--762258d8-696d-4ab1-99c7-745c6d6661dd",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/tmp/wa_auth/cck.dat",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/tmp/wa_auth/cck.dat']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--e6adf1d8-b039-4db0-951a-14ea2f3833fd",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /tmp/wa_auth/cck.dat",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/tmp/wa_auth/cck.dat']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--39576003-43a8-4b66-9579-62fb5636f67c",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/mobile/Media/PostLogs.txt",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/mobile/Media/PostLogs.txt']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--9488192c-ba19-4139-acd3-36ed32b42d37",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/mobile/Media/PostLogs.txt",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/mobile/Media/PostLogs.txt']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--66a644ae-f4f9-409f-888f-eeb28a384509",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/mobile/Media/PostLogs.txt",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/mobile/Media/PostLogs.txt']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--0cdb9bfe-121b-42b8-940f-704418be08dc",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/mobile/Media/RemoteLog.log",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/mobile/Media/RemoteLog.log']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--670c1d82-6e2d-41e8-9573-320fc58e711e",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/mobile/Media/RemoteLog.log",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/mobile/Media/RemoteLog.log']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--4d916f5a-931e-4fad-99bb-587e1c559506",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/mobile/Media/RemoteLog.log",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/mobile/Media/RemoteLog.log']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c661b94a-0023-4e1e-aa59-c218fb766307",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /private/var/mobile/Media/.c2_pe_device_id",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/private/var/mobile/Media/.c2_pe_device_id']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c6d70310-d9ce-4706-991f-e6d1f96cf4e6",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path private/var/mobile/Media/.c2_pe_device_id",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = 'private/var/mobile/Media/.c2_pe_device_id']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--12943da8-154d-4325-ae6a-4e993e01256e",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /var/mobile/Media/.c2_pe_device_id",
+      "description": "Prefix match (MVT check_file_path uses startswith). Includes /private/var, /var, /tmp, and the no-leading-slash form check-fs stores.",
+      "pattern": "[file:path = '/var/mobile/Media/.c2_pe_device_id']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--6d1ede80-88de-4fb7-a31e-c937a0cde290",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /Media/PostLogs.txt",
+      "description": "Backup manifest form: MVT checks '/' plus the domain-relative path.",
+      "pattern": "[file:path = '/Media/PostLogs.txt']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--3c8c5ea9-21c4-4df0-8b4a-794f896c8ab6",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /Media/RemoteLog.log",
+      "description": "Backup manifest form: MVT checks '/' plus the domain-relative path.",
+      "pattern": "[file:path = '/Media/RemoteLog.log']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--961af8af-d3b2-411b-a2a5-663e1ae4c946",
+      "created": "2026-10-14T14:50:51Z",
+      "modified": "2026-10-14T14:50:51Z",
+      "name": "GhostWave path /Media/.c2_pe_device_id",
+      "description": "Backup manifest form: MVT checks '/' plus the domain-relative path.",
+      "pattern": "[file:path = '/Media/.c2_pe_device_id']",
+      "pattern_type": "stix",
+      "valid_from": "2026-10-14T14:50:51Z",
+      "labels": [
+        "malicious-activity"
+      ]
+    }
+  ]
+}

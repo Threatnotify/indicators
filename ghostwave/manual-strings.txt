@@ -1,0 +1,37 @@
+# Not an MVT IOC file. MVT ignores this.
+# Grep a sysdiagnose, unified log archive, or WebKit Cache.db / resource blob.
+# A hit is a lead. Confirm with the STIX2 indicators before calling the device compromised.
+
+js.gotoiphone.com
+cdn.gotoiphone.com
+gotoiphone.com
+mcp9.net
+ios.1dxjd5otdpguvml.cfd
+1dxjd5otdpguvml.cfd
+/exploit_result
+/ios18/beacon
+/ios18/result
+34ef644ff217a50beadde64dc8e23a7dx.js
+channelcode=9c9cea3e7025615403562882657f2e70
+2c6bc229477747f3890818600b308b94
+.c2_pe_device_id
+PostLogs.txt
+RemoteLog.log
+/c2_ipc
+/c2_v1
+wa_identity.json
+keychain_c2_dump.json
+p7_classkeys.json
+p7_blob3.json
+pe_pelog.json
+channel_crypto_min.js
+pe_inj_code.js
+p7_debug.log
+c2_wallet_debug.log
+wa_auth/cck.dat
+pe_lab_run.token
+photos_upload_v1.done
+tg_v1.done
+[PE-WORKER]
+[PE-DIRECT]
+WebContent fcall thread has been spawned!!
