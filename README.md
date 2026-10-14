@@ -1,2 +1,2 @@
 # indicators
-Indicators for MVT 
+Indicators for use in MVT 
